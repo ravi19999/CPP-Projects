@@ -1,0 +1,12 @@
+CMD.EXE /C C:/MinGW/bin/mingw32-make.exe -j2 SHELL=cmd.exe -e -f  Makefile
+"----------Building project:[ Test1 - Debug ]----------"
+mingw32-make.exe[1]: Entering directory 'C:/Users/Uddhav/Documents/CppWorkplace/CppWorkplace'
+process_begin: CreateProcess(NULL, C:/MinGW/bin/g++.exe -std=c++17 -std=c++14 -Wall -g -O0 -Wall -I. -I. -MG -MP -MTDebug/main.cpp.o -MFDebug/main.cpp.o.d -MM main.cpp, ...) failed.
+make (e=2): The system cannot find the file specified.
+mingw32-make.exe[1]: *** [Debug/main.cpp.o] Error 2
+mingw32-make.exe[1]: *** Waiting for unfinished jobs....
+Test1.mk:97: recipe for target 'Debug/main.cpp.o' failed
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Uddhav/Documents/CppWorkplace/CppWorkplace'
+mingw32-make.exe: *** [All] Error 2
+Makefile:4: recipe for target 'All' failed
+====1 errors, 0 warnings====

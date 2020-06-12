@@ -1,0 +1,1 @@
+Debug/area_of_a_room.cpp.o Debug/sizeOf.cpp.o Debug/small_and_big_room.cpp.o Debug/constants.cpp.o   
