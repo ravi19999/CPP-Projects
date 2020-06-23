@@ -13,7 +13,7 @@ CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Uddhav
-Date                   :=07/06/2020
+Date                   :=18/06/2020
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -62,7 +62,7 @@ AS       := C:/MinGW/bin/as.exe
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/vectors2.cpp$(ObjectSuffix) $(IntermediateDirectory)/arrays.cpp$(ObjectSuffix) $(IntermediateDirectory)/vectors.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/arrays.cpp$(ObjectSuffix) $(IntermediateDirectory)/vectors2.cpp$(ObjectSuffix) $(IntermediateDirectory)/vectors.cpp$(ObjectSuffix) 
 
 
 
@@ -93,17 +93,17 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/vectors2.cpp$(ObjectSuffix): vectors2.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/vectors2.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/vectors2.cpp$(DependSuffix) -MM vectors2.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Uddhav/Documents/CppWorkplace/ArraysAndVectors/vectors2.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/vectors2.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/vectors2.cpp$(PreprocessSuffix): vectors2.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/vectors2.cpp$(PreprocessSuffix) vectors2.cpp
-
 $(IntermediateDirectory)/arrays.cpp$(ObjectSuffix): arrays.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/arrays.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/arrays.cpp$(DependSuffix) -MM arrays.cpp
 	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Uddhav/Documents/CppWorkplace/ArraysAndVectors/arrays.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/arrays.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/arrays.cpp$(PreprocessSuffix): arrays.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/arrays.cpp$(PreprocessSuffix) arrays.cpp
+
+$(IntermediateDirectory)/vectors2.cpp$(ObjectSuffix): vectors2.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/vectors2.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/vectors2.cpp$(DependSuffix) -MM vectors2.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Uddhav/Documents/CppWorkplace/ArraysAndVectors/vectors2.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/vectors2.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/vectors2.cpp$(PreprocessSuffix): vectors2.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/vectors2.cpp$(PreprocessSuffix) vectors2.cpp
 
 $(IntermediateDirectory)/vectors.cpp$(ObjectSuffix): vectors.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/vectors.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/vectors.cpp$(DependSuffix) -MM vectors.cpp
